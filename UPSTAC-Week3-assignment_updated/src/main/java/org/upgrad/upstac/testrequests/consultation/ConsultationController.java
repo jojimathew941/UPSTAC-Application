@@ -77,7 +77,7 @@
             // For reference check the method getForTests() method from LabRequestController class
 
 
-            User doctor =userLoggedInService.getLoggedInUser();
+            User doctor = userLoggedInService.getLoggedInUser();
 
             return  testRequestQueryService.findByDoctor(doctor);
 
@@ -100,7 +100,7 @@
             // return the above created object
             // For reference check the method assignForLabTest() method from LabRequestController class
             try {
-                User doctor =userLoggedInService.getLoggedInUser();
+                User doctor = userLoggedInService.getLoggedInUser();
 
                 return   testRequestUpdateService.assignForConsultation(id,doctor);
 
@@ -128,7 +128,7 @@
              try
             {
 
-                User doctor =userLoggedInService.getLoggedInUser();
+                User doctor = userLoggedInService.getLoggedInUser();
                 return testRequestUpdateService.updateConsultation(id,testResult,doctor);
 
             }
